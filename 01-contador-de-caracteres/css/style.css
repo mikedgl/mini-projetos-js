@@ -1,47 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --cor-principal: #164c64;
 }
 
 #titulo {
-    color: rgb(120, 57, 202);
+  color: var(--cor-principal);
+  text-align: center;
 }
 
 #container {
-    width: 100%;
-    max-width: 800px;
-    padding: 30px;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 #texto {
-    width: 100%;
-    padding: 10px;
-    min-height: 300px;
-    border-radius: 4px;
-    resize: vertical;
-    outline-color:rgb(120, 57, 202);
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  min-height: 300px;
+  border-radius: 4px;
+  resize: vertical;
+  outline-color: var(--cor-principal);
+  font-family: "Poppins", sans-serif;
 }
 
-#btn {
-    background-color: rgb(120, 57, 202);
-    color: #fff;
-    border-radius: 4px;
-    display: inline-block;
-    text-decoration: none;
-    padding: 5px 10px;
+#btn-contar,
+#btn-limpar {
+  background-color: var(--cor-principal);
+  color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#btn-contar:hover,
+#btn-limpar:hover {
+  background-color: rgba(22, 76, 100, 0.9);
+}
+
+#opcoes {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#opcoes p {
+  color: var(--cor-principal);
+  font-weight: 600;
 }
