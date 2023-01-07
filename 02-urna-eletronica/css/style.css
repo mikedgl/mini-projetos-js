@@ -13,17 +13,27 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 #urna {
   display: grid;
   width: 100%;
   max-width: 1000px;
-  background-color: #cccdd0;
-  padding: 20px;
+  background-color: #d5cfc1;
+  padding: 40px;
   grid-template-columns: 1fr 420px;
 }
 
 #tela {
   background-color: #fff;
+}
+
+.container {
+  height: 100%;
+  margin: 10px;
 }
 
 #teclado {
@@ -39,6 +49,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
+  grid-auto-rows: max-content;
 }
 
 #teclado-numerico li,
@@ -94,4 +105,28 @@ body {
 #teclado-numerico li:active {
   box-shadow: rgb(22, 22, 22) 3px 3px 6px 0px inset,
     rgba(22, 22, 22, 0.5) -3px -3px 6px 1px inset;
+}
+
+.cargo {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+#digitos {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.digito-1,
+.digito-2 {
+  font-size: 22px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
